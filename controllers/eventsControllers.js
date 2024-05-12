@@ -1,7 +1,9 @@
 // import contactsService from "../services/eventsServices.js";
 
+import { Event } from "../schemas/event.js";
+
 export const getAllEvents = async (req, res) => {
-    const result = await find();
+    const result = await Event.find();
     res.json(result)
 };
 
