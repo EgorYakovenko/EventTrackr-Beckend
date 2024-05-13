@@ -7,7 +7,7 @@ export const register = async (req, res) => {
     user: {
       name: newUser.name,
       email: newUser.email,
-      dateOfBirthate: newUser.date,
+      date: newUser.date,
     },
   });
 };
