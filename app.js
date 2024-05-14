@@ -14,7 +14,7 @@ app.use(morgan('tiny'));
 app.use(cors());
 app.use(express.json());
 
-app.use('/api/users', registerUserRouter);
+app.use('/api/events/:eventId', registerUserRouter);
 app.use('/api/events', eventsRouter);
 
 app.use((_, res) => {
